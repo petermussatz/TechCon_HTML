@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCon 2024 - Homepage</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light background */
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh; /* Ensure body takes full viewport height */
+            display: flex;
+            flex-direction: column;
+            margin: 0; /* Remove default body margin */
+        }
+
+        /* Container for centering content */
+        .container {
+            max-width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem; /* px-4 equivalent */
+            padding-right: 1rem; /* px-4 equivalent */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #2c3e50; /* Dark blue header */
+            color: #ecf0f1; /* Light text */
+            padding-top: 1rem; /* py-4 equivalent */
+            padding-bottom: 1rem; /* py-4 equivalent */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 100%;
+        }
+
+        header .header-content {
+            display: flex;
+            flex-direction: column; /* flex-col for mobile */
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        header h1 {
+            font-size: 2.25rem; /* text-4xl equivalent */
+            font-weight: 800; /* font-extrabold equivalent */
+            margin-bottom: 1rem; /* mb-4 equivalent */
+        }
+
+        /* Navigation Styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* flex-col for mobile */
+            gap: 0.5rem; /* space-y-2 equivalent */
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            display: block; /* Make links block level for better touch targets */
+            padding: 0.25rem 0; /* Add some padding */
+        }
+
+        nav ul li a:hover {
+            color: #3498db; /* Blue on hover */
+            text-decoration: underline;
+        }
+
+        /* Main Section Styles */
+        main {
+            padding: 2rem;
+            max-width: 960px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            flex-grow: 1; /* Allows main to take up available space */
+        }
+
+        /* Section within Main */
+        section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fdfdfd;
+            text-align: center; /* text-center equivalent */
+        }
+
+        section h2 {
+            font-size: 2rem; /* text-3xl equivalent */
+            font-weight: bold; /* font-bold equivalent */
+            margin-bottom: 1rem; /* mb-4 equivalent */
+            color: #1f2937; /* text-gray-800 equivalent */
+        }
+
+        section p {
+            font-size: 1.125rem; /* text-lg equivalent */
+            margin-bottom: 1.5rem; /* mb-6 equivalent */
+            color: #374151; /* text-gray-700 equivalent */
+        }
+
+        /* Video Styles */
+        .video-container {
+            margin: 1.5rem auto 0 auto; /* Center the video and provide top margin */
+            max-width: 720px; /* Limit video width */
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block; /* Ensure video takes full width of its container */
+        }
+
+        .video-container p {
+            font-size: 0.875rem; /* text-sm equivalent */
+            color: #4b5563; /* text-gray-600 equivalent */
+            margin-top: 0.5rem; /* mt-2 equivalent */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            margin-top: 2rem;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            width: 100%;
+        }
+
+        /* Responsive adjustments for medium screens and up (md: breakpoint) */
+        @media (min-width: 768px) {
+            header .header-content {
+                flex-direction: row; /* md:flex-row */
+            }
+
+            header h1 {
+                margin-bottom: 0; /* md:mb-0 */
+            }
+
+            nav ul {
+                flex-direction: row; /* md:flex-row */
+                gap: 2rem; /* md:space-x-8 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section of the homepage -->
+    <header>
+        <div class="container header-content">
+            <!-- Conference name -->
+            <h1>TechCon 2024</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <div class="container">
+            <!-- Introduction section -->
+            <section>
+                <h2>Welcome to TechCon 2024!</h2>
+                <p>
+                    Join us for TechCon 2024, the premier technology conference bringing together innovators,
+                    experts, and enthusiasts from around the globe. Explore cutting-edge advancements,
+                    network with industry leaders, and discover the future of technology.
+                    This year, we focus on Artificial Intelligence, Cybersecurity, and Sustainable Tech.
+                </p>
+                <!-- Embedded promotional video -->
+                <div class="video-container">
+                    <video controls aria-label="Promotional video for TechCon 2024">
+                        <!-- Using a placeholder video URL. In a real scenario, replace with your video file. -->
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>
+                        <small>Note: This is a placeholder video. In a live deployment, replace with your actual promotional content and consider adding subtitles/descriptions for accessibility.</small>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <!-- Copyright information -->
+            <p>&copy; copyright 2025 TechCon. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
